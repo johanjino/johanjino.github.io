@@ -55,6 +55,41 @@
     sections.forEach((section) => sectionObserver.observe(section));
   }
 
+  const stageVideo = document.querySelector(".stage-video");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const saveData = navigator.connection && navigator.connection.saveData;
+  if (stageVideo && !reduceMotion && !saveData && "IntersectionObserver" in window) {
+    const { webm, mp4 } = stageVideo.dataset;
+    let visible = false;
+    const play = () => {
+      if (visible) stageVideo.play().catch(() => {});
+    };
+    stageVideo.muted = true;
+    stageVideo.addEventListener("canplay", play);
+    stageVideo.addEventListener("error", () => {
+      if (stageVideo.getAttribute("src") !== mp4) {
+        stageVideo.src = mp4;
+        stageVideo.load();
+      }
+    });
+    new IntersectionObserver(
+      (entries) => {
+        visible = entries[entries.length - 1].isIntersecting;
+        if (!visible) {
+          stageVideo.pause();
+          return;
+        }
+        if (!stageVideo.getAttribute("src")) {
+          stageVideo.preload = "auto";
+          stageVideo.src = stageVideo.canPlayType('video/webm; codecs="vp9"') ? webm : mp4;
+          stageVideo.load();
+        }
+        play();
+      },
+      { rootMargin: "200px 0px" }
+    ).observe(stageVideo);
+  }
+
   const form = document.querySelector("#contact-form");
   if (form) {
     const status = form.querySelector(".form-status");
