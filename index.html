@@ -1,689 +1,512 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Johan Jino</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Johan Jino — System Software Engineer at NVIDIA</title>
+  <meta name="description" content="Johan Jino is a London-based System Software Engineer at NVIDIA working across GPUs, compilers, low-latency networking and Kubernetes. HPCA 2027 author and GStreamer Conference speaker. Open to new roles.">
+  <link rel="canonical" href="https://johanjino.github.io/">
 
-  <!-- Favicons -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://johanjino.github.io/">
+  <meta property="og:title" content="Johan Jino — System Software Engineer at NVIDIA">
+  <meta property="og:description" content="System Software Engineer at NVIDIA · HPCA 2027 author · GStreamer Conference speaker. From assembly to distributed infra.">
+  <meta property="og:image" content="https://johanjino.github.io/assets/img/johan-og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#05070a">
+
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="assets/img/favicon/site.webmanifest">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Johan Jino",
+    "jobTitle": "System Software Engineer",
+    "worksFor": { "@type": "Organization", "name": "NVIDIA" },
+    "url": "https://johanjino.github.io/",
+    "email": "mailto:johanjinoj@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "London", "addressCountry": "UK" },
+    "alumniOf": "Imperial College London",
+    "sameAs": ["https://github.com/johanjino", "https://www.linkedin.com/in/johan-jino-student/"]
+  }
+  </script>
 </head>
 
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
-
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
-        <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-group"></i> <span>Testimonials</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+  <header class="nav">
+    <div class="wrap">
+      <a href="#top" class="nav-brand">Johan Jino</a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 7h14M3 13h14"/></svg>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#specs">Tech Specs</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Get in touch</a></li>
       </ul>
-    </nav><!-- .nav-menu -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Johan Jino</h1>
-      <p>I'm a <span class="typed" data-typed-items="Student, Developer, Software Engineer"></span></p>
-      <div class="social-links">
-        <a href="https://github.com/johanjino" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/johan-jino-student/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="assets/CV_Johan_Jino_2024.pdf" class="pdf"><i class="bx bxs-file-pdf"></i></a>
-        <a href="https://www.instagram.com/johxn._.j/" class="instagram"><i class="bx bxl-instagram"></i></a>
-      </div>
     </div>
-  </section><!-- End Hero -->
+  </header>
 
-  <main id="main">
+  <main id="top">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p>I'm Johan Jino, a computer aficionado and coding enthusiast. I am currently in my 4th Year at 
-            Imperial College London studying for an MEng Electronic and Information Engineering. 
-            With a solid foundation in Computer Architecture, Compiler Design, and Software Engineering, I'm on track for a First Class. 
-            My prime focus has been low level software design, System Performance Engineering and FPGA based hardware design. 
-            I am also very much interested in creating and training ML models – my latest creation? An AI bot that owns Flappy Birds like a boss 😎!
-            <br>Apart from being a engineer, I love playing badminton and have been a national player for UAE. 
-            Blitz chess has recently been my stress buster. Also, I love reading science and medicine just to know more about who we are 👨, where we are 🌍 and where we can go 🚀.
-            </p>
+    <section class="hero">
+      <div class="wrap">
+        <!-- TODO: update availability, e.g. "Open to founding engineer roles · London · from Jan 2027" -->
+        <p class="status reveal">Open to new roles · London</p>
+        <p class="eyebrow reveal" data-delay="60">System Software Engineer @ NVIDIA</p>
+        <h1 class="headline reveal" data-delay="120">Johan Jino</h1>
+        <p class="lede reveal" data-delay="180">I make hardware do more with less, <span class="gradient-text cursor">from assembly to distributed infra.</span></p>
+        <div class="actions reveal" data-delay="240">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="more" href="assets/Johan_Jino_CV.pdf" target="_blank" rel="noopener">Download CV</a>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/temp.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Software Engineer.</h3>
-            <p class="fst-italic">
-              I will be graduating on June 2025, and I am currently looking for full time graduate roles.
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>London, UK</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>Your Here! 😀</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>johanjinoj@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+44 7436 567710</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master in Computer Engineering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Currently:</strong> <span>Software Engineer Intern @ Nvidia</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              I am a keen learner and I constantly push myself to do better than I can now. I love working on ideas that create a huge impact and maybe change the world! 
-              Please feel free to reach me out on my LinkedIn or Email for any opportunity that you think may suit me.
-            </p>
-          </div>
-        </div>
-
       </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
-      <!-- <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Awards</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div> -->
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p></p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">System Verilog <i class="val">Proficient</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Databases (MySQL) <i class="val">Proficient</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">C++ <i class="val">Advanced</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-            
-            <div class="progress">
-              <span class="skill">Linux (Bash)<i class="val">Proficient</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Machine Learning (TensorFlow) <i class="val">Intermediate</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
+      <div class="hero-media reveal" data-delay="300">
+        <div class="hud-frame" aria-hidden="true"></div>
+        <div class="hud-scan" aria-hidden="true"></div>
+        <p class="hud hud-tl" aria-hidden="true">ID: J.JINO<br>ROLE: SYS_ENG</p>
+        <p class="hud hud-tr" aria-hidden="true">51.5008° N<br>0.1218° W</p>
+        <p class="hud hud-bl" aria-hidden="true">● STATUS: AVAILABLE</p>
+        <p class="hud hud-br" aria-hidden="true">LDN // UK</p>
+        <img src="assets/img/johan-hero.jpg" alt="Johan Jino on the Thames embankment by Westminster Bridge" width="2200" height="1340" fetchpriority="high">
       </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p></p>
+    <section id="highlights" class="section section-alt">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Highlights</p>
+          <h2 class="title">Impact, measured.</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>MEng Electronic and Information Engineering</h4>
-              <h5>Sept 2021 - June 2025</h5>
-              <p><em>Imperial College London, UK</em></p>
+        <div class="bento">
+          <article class="tile tile-wide tile-dark reveal">
+            <p class="tile-label">NVIDIA · Holoscan for Media</p>
+            <div>
+              <p class="tile-stat gradient-text">&gt;50%</p>
+              <p class="tile-copy">fewer GPUs per 4K60 ST 2110 stream. <span>Using MIG, time-slicing, CUDA MPS, RDMA and GPUDirect, and still broadcast-compliant.</span></p>
+            </div>
+          </article>
+
+          <article class="tile tile-wide reveal" data-delay="80">
+            <p class="tile-label">Research · HPCA 2027</p>
+            <div>
+              <p class="tile-stat">&minus;84%</p>
+              <p class="tile-copy">false memory dependencies. <span>Second author on PG-MDP: +4.6% IPC on a small core without a bigger predictor.</span></p>
+            </div>
+          </article>
+
+          <article class="tile tile-wide reveal">
+            <p class="tile-label">Speaker</p>
+            <div>
+              <p class="tile-stat tile-stat-sm">GStreamer Conf&nbsp;'25</p>
+              <p class="tile-copy">Uncompressed ST 2110 over GPU and NIC. <span>Kernel-bypass networking with Rivermax.</span></p>
+            </div>
+          </article>
+
+          <article class="tile tile-wide tile-dark reveal" data-delay="80">
+            <p class="tile-label">Shipped product · NVIDIA</p>
+            <div>
+              <p class="tile-stat">0&nbsp;→&nbsp;1</p>
+              <p class="tile-copy">Designed and shipped the Holoscan for Media Installer v1. <span>A desktop app that sets up GPU broadcast clusters on OpenShift or Kubernetes, with a Nemotron-powered help assistant.</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Range</p>
+          <h2 class="title">From assembly to distributed infra.</h2>
+          <p class="lede">Most engineers pick a layer. I've built at every one, which helps on a small team where problems don't stay in one place.</p>
+        </div>
+
+        <div class="stack reveal">
+          <div class="layer">
+            <p class="layer-num">01</p>
+            <h3>Hardware</h3>
+            <p>Pipelined, cached RISC-V CPUs in SystemVerilog. Fixed-point DSP on FPGAs.</p>
+          </div>
+          <div class="layer">
+            <p class="layer-num">02</p>
+            <h3>Compilers</h3>
+            <p>C90 to RISC-V: lexing, parsing, ASTs, register allocation and code generation.</p>
+          </div>
+          <div class="layer">
+            <p class="layer-num">03</p>
+            <h3>Systems</h3>
+            <p>GPU sharing with MIG, time-slicing and CUDA MPS. RDMA and GPUDirect for live video.</p>
+          </div>
+          <div class="layer">
+            <p class="layer-num">04</p>
+            <h3>Infrastructure</h3>
+            <p>Kubernetes, Helm, Prometheus and Grafana, running in production.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 class="title">Where I've shipped.</h2>
+        </div>
+
+        <div class="roles">
+          <article class="role reveal">
+            <div class="role-meta">
+              <h3>NVIDIA</h3>
+              <p>Reading, UK<br>Full-time: Aug 2025 – Present<br>Intern: Apr – Sep 2024</p>
+            </div>
+            <div>
+              <p class="role-title">System Software Engineer · Holoscan for Media</p>
               <ul>
-                <li>Achieved 74% overall for 2nd Year and on track for first class.</li>
-                <li>Modules of interest:</li>
-                <ul>
-                  <li>Mathematics for Engineers (82%)</li>
-                  <li>Instruction Set Architecture and Compilers (79%)</li>
-                  <li>Software Systems (76%)</li>
-                  <li>Discrete Mathematics (74%)</li>
-                </ul>
+                <li><strong>Shipped SMPTE ST 2110-40 ancillary data streaming in <a href="https://github.com/NVIDIA/DeepStream/tree/main/src/gst-plugins/gst-nvdsudp" target="_blank" rel="noopener">NvDsUdp</a></strong> on the Rivermax SDK, including a new SMPTE 291 RTP payloader and depayloader used in real-time AI workflows.</li>
+                <li><strong>Hardened NvDsUdp's kernel-bypass transmit and receive path</strong>, fixing jitter edge cases and reconnection failures in live broadcast pipelines.</li>
+                <li><strong>Presented the work at <a href="https://indico.freedesktop.org/event/11/contributions/499/" target="_blank" rel="noopener">GStreamer Conference 2025</a></strong> as primary author: GPU-to-NIC transfer, packet-paced transmission and NMOS connection management.</li>
+                <li>Contributor and reviewer on <a href="https://github.com/NVIDIA/nvnmos" target="_blank" rel="noopener">NVIDIA NvNmos</a>, the open-source NMOS control plane, including its Rust GStreamer elements (gst-nmos-rs).</li>
+                <li>Wrote custom Kubernetes operators in Go, and Wireshark dissectors for new ST 2110 protocols.</li>
+                <li>Designed and shipped the Holoscan for Media Installer from zero to v1, a cross-platform desktop app (FastAPI, React, asyncssh, Ansible) that takes bare-metal servers to a running OpenShift or Kubernetes GPU cluster. It includes a help assistant built on NVIDIA NIM and grounded in the product docs.</li>
+              </ul>
+              <p class="role-sub">Internship</p>
+              <ul>
+                <li><strong>Cut the number of GPUs needed by more than 50%</strong> for 4K 60fps ST 2110 streams while maintaining broadcast compliance, using Multi-Instance GPU, time-slicing and CUDA MPS.</li>
+                <li><strong>Built and shipped to production</strong> a metrics toolchain for applications on Kubernetes, deployed with Helm and visualised in Prometheus and Grafana.</li>
+                <li>Put GPU memory and utilisation next to SR-IOV network TX/RX in one view, so the team could see hardware and network health together.</li>
+                <li>Developed a software-defined Kubernetes platform for broadcast video orchestration, using RDMA and GPUDirect.</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Rivermax</span><span class="chip">ST 2110</span><span class="chip">GStreamer</span><span class="chip">Rust</span><span class="chip">Go</span><span class="chip">CUDA MPS</span><span class="chip">MIG</span><span class="chip">RDMA</span><span class="chip">GPUDirect</span><span class="chip">Kubernetes</span><span class="chip">Helm</span><span class="chip">Prometheus</span><span class="chip">Grafana</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="role reveal">
+            <div class="role-meta">
+              <h3>Qualcomm</h3>
+              <p>UK<br>Jul – Sep 2023</p>
+            </div>
+            <div>
+              <p class="role-title">Software Engineer Intern</p>
+              <ul>
+                <li><strong>Rebuilt an on-device profiling and timing-analysis tool</strong>, moving it from TCL to Python and adding statistical analysis features.</li>
+                <li>Gathered requirements from several internal user groups and shaped the redesign around them.</li>
+                <li>Worked on firmware for the RISC-V hardware root of trust in Snapdragon SoCs.</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">TCL</span><span class="chip">RISC-V</span><span class="chip">Firmware</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="role reveal">
+            <div class="role-meta">
+              <h3>Imperial College London</h3>
+              <p>London, UK<br>2021 – 2025</p>
+            </div>
+            <div>
+              <p class="role-title">MEng Electronic and Information Engineering · First Class Honours · Dean's List</p>
+              <ul>
+                <li><strong>Thesis: Compiler Analysis and Profiling Assisted Memory Dependency Prediction.</strong> Built LLVM passes with SVF static analysis and evaluated them in gem5, reaching a 5.03% geomean IPC gain on SPEC CPU2017 for a small core. I presented it as first author in a <a href="assets/docs/Johan_Jino_REACH_2025_Poster.pdf" target="_blank" rel="noopener">REACH 2025 poster</a>, and it was adapted into the <a href="PG-MDP-details.html">HPCA 2027 paper</a>, where I'm second author.</li>
+                <li>Focused on computer architecture, compilers, systems performance engineering and FPGA design.</li>
+                <li>Top modules: Mathematics for Engineers (82%), Instruction Set Architecture and Compilers (79%), Software Systems (76%).</li>
               </ul>
             </div>
-
-            <div class="resume-item">
-              <h4>All India Senior School Certificate</h4>
-              <h5>2018 - 2021</h5>
-              <p><em>GEMS United Indian School, Abu Dhabi, UAE</em></p>
-              <ul>
-                <li>School topper for Physics (96%), Mathematics (96%), Chemistry (96%) and Computer Science (95%).</li>
-                <li>Received Regional academic excellence award from several institutes for top national performance (UAE). </li>
-                <li>Gold Medalist for Year 12, 11 and 10 for best performance among the all students in the cohort.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-
-            <div class="resume-item">
-              <h4>System Software Engineer Intern</h4>
-              <h5>April 2024 - Sept 2024</h5>
-              <p><em>Nvidia, Reading, UK</em></p>
-              <ul>
-                <li>Working with the Holoscan for Media team to develop software-defined Kubernetes platform for video broadcast orchestration.</li>
-                <li>Worked on system performance optimizations leveraging RDMA, GPU Direct, Multi-Instance GPU, Time Slicing, CUDA MPS.</li>
-                <li>Improved efficiency by reducing number GPUs required by >50%, for 4K 60fps ST2110 streams while mainting compliance. </li>
-                <li>Created custom metrics monitoring toolchain using Prometheus and Grafana for deploying applications on Kubernetes, using Helm. Pushed to production.</li>
-                <li>Visualized hardware metrics such as GPU memory, utilization, etc as well as highspeed network metrics such as SR-IOV Network TX/RX.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Software Engineer Intern</h4>
-              <h5>July 2023 - Sept 2023</h5>
-              <p><em>Qualcomm, UK</em></p>
-              <ul>
-                <li>Primarily focused on profiling and timing analysis tool for on device testing. Scaled tool from TCL to Python and added more statistical features.</li>
-                <li>Further worked with firmware on RISC-V based hardware root of trust for Snapdragon SoC.</li>
-              </ul>
-            </div>
-
-          </div>
-
+          </article>
         </div>
-
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    <!-- ======= Projects Section ======= -->
-    <section id="projects" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Projects</h2>
-          <p>Below are a selection of projects I've worked on during my time at university or in my personal time .</p>
+    <section id="work" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 class="title">Built from first principles.</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-C">C++</li>
-              <li data-filter=".filter-Python">Python</li>
-              <li data-filter=".filter-Hardware">Hardware</li>
-              <li data-filter=".filter-Network">Network</li>
-            </ul>
-          </div>
+        <div class="work">
+          <article class="card reveal">
+            <div class="card-body">
+              <p class="card-kicker">Research · HPCA 2027</p>
+              <h3>PG-MDP</h3>
+              <p>Profile-guided memory dependence prediction. The compiler labels loads that never conflict, so a small core's predictor can skip them.</p>
+              <div class="actions">
+                <a class="more" href="PG-MDP-details.html">Learn more</a>
+                <a class="more" href="https://arxiv.org/abs/2604.08445" target="_blank" rel="noopener">Paper</a>
+                <a class="more" href="https://github.com/johanjino/PND-loads" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+            <div class="card-media">
+              <dl class="card-term" aria-label="PG-MDP results on SPECspeed 2017">
+                <div><dt>MDP queries</dt><dd>&minus;80%</dd></div>
+                <div><dt>False dependencies</dt><dd>&minus;84%</dd></div>
+                <div><dt>Geomean IPC, ROB=128</dt><dd>+4.6%</dd></div>
+                <div><dt>vs 8x predictor</dt><dd>within 1.2%</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="80">
+            <div class="card-body">
+              <p class="card-kicker">Open source · Talk</p>
+              <h3>NvDsUdp &amp; NvNmos</h3>
+              <p>GPU and NIC accelerated ST 2110 for GStreamer, using kernel bypass, packet pacing and NMOS control.</p>
+              <div class="actions">
+                <a class="more" href="https://indico.freedesktop.org/event/11/contributions/499/" target="_blank" rel="noopener">Watch the talk</a>
+                <a class="more" href="https://github.com/NVIDIA/DeepStream/tree/main/src/gst-plugins/gst-nvdsudp" target="_blank" rel="noopener">NvDsUdp</a>
+                <a class="more" href="https://github.com/NVIDIA/nvnmos" target="_blank" rel="noopener">NvNmos</a>
+              </div>
+            </div>
+            <div class="card-media">
+              <dl class="card-term" aria-label="NvDsUdp and NvNmos highlights">
+                <div><dt>Transport</dt><dd>GPU → NIC</dd></div>
+                <div><dt>Networking</dt><dd>Rivermax</dd></div>
+                <div><dt>Ancillary data</dt><dd>ST 2110-40</dd></div>
+                <div><dt>Control plane</dt><dd>NMOS</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-body">
+              <p class="card-kicker">Compiler · C++</p>
+              <h3>ExecEngine</h3>
+              <p>A C90 to RISC-V compiler. Top 2 in the cohort on hidden tests, and the only team to pass every seen test.</p>
+              <div class="actions">
+                <a class="more" href="ExecEngine-details.html">Learn more</a>
+                <a class="more" href="https://github.com/johanjino/ExecEngine_C_Compiler" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+            <div class="card-media">
+              <img src="assets/img/projects/ExecEngine/ExecEngine.png" alt="ExecEngine compiler" loading="lazy" width="1920" height="1080">
+            </div>
+          </article>
+
+          <article class="card reveal" data-delay="80">
+            <div class="card-body">
+              <p class="card-kicker">Hardware · SystemVerilog</p>
+              <h3>RISC-V CPU</h3>
+              <p>A pipelined, cached RV32I CPU with its own C++ test bench and CI.</p>
+              <div class="actions">
+                <a class="more" href="RISC-V_CPU.html">Learn more</a>
+                <a class="more" href="https://github.com/johanjino/RISC-V_CPU" target="_blank" rel="noopener">GitHub</a>
+              </div>
+            </div>
+            <div class="card-media">
+              <img src="assets/img/projects/RISC-V_CPU/RISC-V_CPU.jpg" alt="RISC-V CPU block diagram" loading="lazy" width="1280" height="695">
+            </div>
+          </article>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-C">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/ExecEngine/ExecEngine.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>ExecEngine</h4>
-                <p>ANSI C Compiler</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/johanjino/ExecEngine_C_Compiler#execengine-c-compiler" class="github"><i class="bx bxl-github"></i></a>
-                  <a href="ExecEngine-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Project Details"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-Python filter-Network filter-Hardware">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/FlappyGA/FlappyGA.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>FlappyGA</h4>
-                <p>FPGA Controlled Game</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/johanjino/FlappyGA" class="github"><i class="bx bxl-github"></i></a>
-                  <a href="FlappyGA-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Project Details"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-C filter-Python filter-Network filter-Hardware">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/MazeMaster/MazeMaster.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>MazeMaster</h4>
-                <p>Self-Balancing Maze Solving Rover</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/johanjino/MazeMaster" class="github"><i class="bx bxl-github"></i></a>
-                  <a href="MazeMaster-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Project Details"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-C filter-Hardware">
-            <div class="portfolio-wrap">
-              <img src="assets/img/projects/RISC-V_CPU/RISC-V_CPU.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>RISC-V CPU</h4>
-                <p>SystemVerilog CPU Design</p>
-                <div class="portfolio-links">
-                  <a href="https://github.com/johanjino/RISC-V_CPU" class="github"><i class="bx bxl-github"></i></a>
-                  <a href="RISC-V_CPU.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Project Details"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
+        <p class="work-more reveal">Earlier projects: <a href="FlappyGA-details.html">FlappyGA</a>, an eight-player FPGA game with a cloud leaderboard, and <a href="MazeMaster-details.html">MazeMaster</a>, a self-balancing rover that maps a maze.</p>
       </div>
-    </section><!-- End Projects Section -->
+    </section>
 
-    <!-- ======= Services Section ======= -->
-    <!-- <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">In their words</p>
+          <h2 class="title">Good to work with.</h2>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
+        <div class="quotes">
+          <figure class="quote reveal">
+            <blockquote>
+              <p class="quote-pull">“The only team to produce a compiler capable of passing all seen test cases.”</p>
+              <p class="quote-more">Johan asked good questions and responded well to feedback, which combined with his technical skills and work ethic will allow him to grow into a fantastic software engineer.</p>
+            </blockquote>
+            <figcaption>
+              <img src="assets/img/testimonials/Simon-Staal.jpg" alt="" loading="lazy">
+              <div>
+                <p class="quote-name">Simon Staal</p>
+                <p class="quote-role">Software Engineer, Optiver · Compilers TA</p>
               </div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
+          <figure class="quote reveal" data-delay="80">
+            <blockquote>
+              <p class="quote-pull">“What sets Johan apart is his excellent communication skills.”</p>
+              <p class="quote-more">A highly skilled Python programmer who demonstrated exceptional capabilities in refactoring and redesigning an internal tool for performance tracing.</p>
+            </blockquote>
+            <figcaption>
+              <img src="assets/img/testimonials/Nick.jpeg" alt="" loading="lazy">
+              <div>
+                <p class="quote-name">Nickolas Butti</p>
+                <p class="quote-role">Staff Engineer, Qualcomm</p>
               </div>
-              <h4><a href="">Sed Perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
+          <figure class="quote reveal" data-delay="160">
+            <blockquote>
+              <p class="quote-pull">“A fantastic coworker and, when the situation demands, an inspiring team lead.”</p>
+              <p class="quote-more">His ability to break down complex problems into simple, manageable tasks has been a key factor in achieving critical project milestones.</p>
+            </blockquote>
+            <figcaption>
+              <img src="assets/img/testimonials/Alvi.jpg" alt="" loading="lazy">
+              <div>
+                <p class="quote-name">Sohailul Alvi</p>
+                <p class="quote-role">Cloud Solutions Engineer, Appian · Oxford MSc</p>
               </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bx-layer"></i>
-              </div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bx-slideshow"></i>
-              </div>
-              <h4><a href="">Dele Cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bx bx-arch"></i>
-              </div>
-              <h4><a href="">Divera Don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
+    <section id="specs" class="section">
+      <div class="wrap-narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Tech specs</p>
+          <h2 class="title">Under the hood.</h2>
         </div>
 
-      </div> -
-    </section>End Services Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/Simon-Staal.jpg" class="testimonial-img" alt="">
-                <h3>Simon Staal</h3>
-                <h4>Software Engineer @ Optiver</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I've worked with Johan as a teaching assistant for the Y2 compilers module, where students are required to implement a C90 to RISCV compiler in C++. This is an incredibly challenging project, but Johan and his partner worked extremely hard, and were the only team to produce a compiler capable of passing all seen testcases, which is a significant accomplishment. Johan asked good questions and responded well to feedback, which combined with his technical skills and work ethic I think will allow him to grow into a fantastic software engineer.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
+        <div class="specs reveal">
+          <div class="spec">
+            <h3>Languages</h3>
+            <div>
+              <p>C++17/20, Python, C</p>
+              <p class="spec-note">Working knowledge: Rust, Go, Bash, SQL, SystemVerilog</p>
             </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/Nick.jpeg" class="testimonial-img" alt="">
-                <h3>Nickolas Butti</h3>
-                <h4>Staff Engineer @ Qualcomm</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I had the pleasure of working with Johan during his internship, and I wholeheartedly recommend him. Johan is a highly skilled Python programmer who demonstrated exceptional capabilities in refactoring and redesigning an internal tool for performance tracing. His proficiency in coding is impressive, but what sets Johan apart is his excellent communication skills. He effectively gathered requirements from multiple users, showcasing a keen understanding of their needs. His collaborative approach and problem-solving abilities greatly contributed to the success of the project. It was a pleasure to have Johan on the team, and I believe he will excel in any future endeavors.<i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/Alvi.jpg" class="testimonial-img" alt="">
-                <h3>Sohailul Alvi</h3>
-                <h4>Student @ Imperial College London</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Working with Johan over the past year has been a truly enriching experience. As teammates on four distinct projects, I've seen him excel as a remarkable solution provider. His ability to break down complex problems into simple, manageable tasks has been a key factor in achieving critical project milestones. Johan is both a fantastic coworker and, when the situation demands, an inspiring team lead. I eagerly look forward to future collaborations with him.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            
-      </div>
-    </section><!--End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row mt-1">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>London, UK</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>johanjinoj@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+44 7436 567710</p>
-              </div>
-
-            </div>
-
           </div>
+          <div class="spec">
+            <h3>GPU and systems</h3>
+            <div>
+              <p>CUDA MPS, Multi-Instance GPU, time-slicing, GPUDirect</p>
+              <p>Nsight Systems, perf, gdb, Valgrind</p>
+              <p>Linux performance tuning: CPU pinning, NUMA</p>
+            </div>
+          </div>
+          <div class="spec">
+            <h3>Networking</h3>
+            <div>
+              <p>Rivermax kernel bypass, RDMA, SR-IOV, packet pacing, PTP</p>
+              <p>ST 2110, SMPTE 291, RTP, NMOS</p>
+              <p>Wireshark (custom dissectors), tcpdump</p>
+            </div>
+          </div>
+          <div class="spec">
+            <h3>Infrastructure</h3>
+            <div>
+              <p>Kubernetes custom operators (Go), GPU and Network Operators, Helm, Docker</p>
+              <p>Prometheus, Grafana, DCGM, GitHub Actions CI</p>
+            </div>
+          </div>
+          <div class="spec">
+            <h3>Compilers</h3>
+            <div>
+              <p>LLVM passes, SVF static analysis, profile-guided optimisation, gem5 (AArch64)</p>
+              <p>C90 to RISC-V compiler</p>
+            </div>
+          </div>
+          <div class="spec">
+            <h3>Hardware</h3>
+            <div>
+              <p>RISC-V (RV32I), FPGA, pipelining and caches</p>
+              <p>Fixed-point FIR filtering</p>
+            </div>
+          </div>
+          <div class="spec">
+            <h3>Machine learning</h3>
+            <div>
+              <p>PyTorch, TensorFlow</p>
+            </div>
+          </div>
+          <div class="spec">
+            <h3>Education</h3>
+            <div>
+              <p>MEng Electronic and Information Engineering</p>
+              <p class="spec-note">First Class Honours · Dean's List · Imperial College London</p>
+            </div>
+          </div>
+          <div class="spec">
+            <h3>Location</h3>
+            <div>
+              <p>London, UK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
+    <section id="about" class="section section-alt">
+      <div class="wrap">
+        <div class="about">
+          <div class="about-photo reveal">
+            <img src="assets/img/johan-about.jpg" alt="Johan Jino smiling on a City of London rooftop with the Gherkin behind him" loading="lazy" width="666" height="1000">
+          </div>
+          <div class="reveal" data-delay="80">
+            <p class="eyebrow">About</p>
+            <h2 class="title">Hi, I'm Johan.</h2>
+            <p class="body-lg">I'm a System Software Engineer at NVIDIA, based in London. I like problems where performance is the product: more streams from one GPU, more instructions through a pipeline, cleaner signal from a noisy sensor.</p>
+            <p class="body-lg">My MEng thesis on compiler-assisted memory dependency prediction became an HPCA 2027 paper.</p>
+            <p class="body-lg">I studied Electronic and Information Engineering at Imperial College London and grew up in Abu Dhabi, where I played badminton for the UAE national team. These days I unwind with blitz chess and reading about science and medicine.</p>
+            <p class="body-lg">I'm looking for a team that moves fast and gives engineers real ownership.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <form action="https://formspree.io/f/xknlrwaq" method="POST">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="text-center">
-                <style>
-                  button {
-                    background: #0563bb;
-                    border: 0;
-                    padding: 10px 35px;
-                    color: #fff;
-                    transition: 0.4s;
-                    border-radius: 50px;
-                  }
-                  button span {
-                    cursor: pointer;
-                    display: inline-block;
-                    position: relative;
-                    transition: 0.5s;
-                  }
-                  button span:after {
-                    content: '\00bb';
-                    position: absolute;
-                    opacity: 0;
-                    top: 0;
-                    right: -20px;
-                    transition: 0.5s;
-                  }
-                  button:hover {
-                    background-color: #2687e2;
-                  }
-                  button:hover span {
-                    padding-right: 25px;
-                  }
-                  button:hover span:after {
-                    opacity: 1;
-                    right: 0;
-                  }
-                </style>
-                <br>
-                <button type="submit">
-                  <span>Send Message</span>
-                </button></div>
-            </form>
-
+    <section id="contact" class="section section-dark contact">
+      <div class="wrap">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="headline">Let's build something.</h2>
+          <p class="lede">Open to full-time engineering roles, early-stage teams — systems, infrastructure or AI.</p>
+          <div class="actions">
+            <a class="btn" href="mailto:johanjinoj@gmail.com">Email me</a>
+            <a class="more" href="assets/Johan_Jino_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+          <div class="contact-links">
+            <a class="more" href="https://www.linkedin.com/in/johan-jino-student/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="more" href="https://github.com/johanjino" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
 
+        <form id="contact-form" class="form reveal" action="https://formspree.io/f/xknlrwaq" method="POST">
+          <input type="text" name="name" placeholder="Name" autocomplete="name" required aria-label="Name">
+          <input type="email" name="email" placeholder="Email" autocomplete="email" required aria-label="Email">
+          <input class="full" type="text" name="subject" placeholder="Company or role (optional)" aria-label="Company or role">
+          <textarea class="full" name="message" placeholder="What are you building?" required aria-label="Message"></textarea>
+          <button class="btn full" type="submit">Send message</button>
+          <p class="form-status full" role="status" aria-live="polite"></p>
+        </form>
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Johan Jino</h3>
-      <p></p>
-      <div class="social-links">
-        <a href="https://github.com/johanjino" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.linkedin.com/in/johan-jino-student/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="assets/CV_Johan_Jino_2024.pdf" class="pdf"><i class="bx bxs-file-pdf"></i></a>
-        <a href="https://www.instagram.com/johxn._.j/" class="instagram"><i class="bx bxl-instagram"></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>Johan Jino</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+  <footer class="footer">
+    <div class="wrap">
+      <p>Copyright © 2026 Johan Jino.</p>
+      <nav>
+        <a href="https://www.linkedin.com/in/johan-jino-student/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/johanjino" target="_blank" rel="noopener">GitHub</a>
+        <a href="assets/Johan_Jino_CV.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/site.js"></script>
 </body>
 
 </html>

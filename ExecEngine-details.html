@@ -1,107 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon/favicon-16x16.png" rel="icon">
-  <link href="assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ExecEngine — a C90 to RISC-V compiler · Johan Jino</title>
+  <meta name="description" content="ExecEngine is a C90 to RISC-V compiler written in C++ by Johan Jino and Sohailul Alvi. Ranked second in the cohort on hidden tests.">
+  <meta property="og:title" content="ExecEngine — a C90 to RISC-V compiler">
+  <meta property="og:description" content="Lexing, parsing, ASTs, register allocation and code generation, written in C++.">
+  <meta property="og:image" content="https://johanjino.github.io/assets/img/projects/ExecEngine/ExecEngine.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <meta name="theme-color" content="#05070a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 
 <body>
 
-  <main id="main">
+  <header class="nav">
+    <div class="wrap">
+      <a href="index.html" class="nav-brand">Johan Jino</a>
+      <ul class="nav-links nav-links-static">
+        <li><a href="index.html#work">All work</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Get in touch</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="eyebrow reveal">Compiler · C++</p>
+        <h1 class="headline cursor reveal" data-delay="60">ExecEngine</h1>
+        <p class="lede reveal" data-delay="120">A C90 to RISC-V compiler, built from the lexer up.</p>
+        <div class="actions reveal" data-delay="180">
+          <a class="btn" href="https://github.com/johanjino/ExecEngine_C_Compiler" target="_blank" rel="noopener">View on GitHub</a>
+          <a class="more" href="index.html#work">More projects</a>
+        </div>
+      </div>
+    </section>
 
-      <div class="container">
+    <div class="case-media">
+      <img class="reveal" src="assets/img/projects/ExecEngine/ExecEngine.png" alt="ExecEngine compiler" width="1920" height="1080">
+      <div class="case-media-pair">
+        <img class="reveal" src="assets/img/projects/ExecEngine/Sample_Code.jpg" alt="Sample of the compiler source code" loading="lazy">
+        <img class="reveal" data-delay="80" src="assets/img/projects/ExecEngine/Sample_Test.jpg" alt="Test suite output" loading="lazy">
+      </div>
+    </div>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <h2>ExecEngine</h2>
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ExecEngine/ExecEngine.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ExecEngine/Sample_Code.jpg" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/projects/ExecEngine/Sample_Test.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-description">
-              <h2>Project Information</h2>
-              <p>ANSI C (C90) to RISC-V compiler developed as part of the EIE 2nd Year Compilers coursework. This project was done by myself (Johan) and <a href="https://github.com/alvi-codes">Alvi</a>. This project can be used to learn basics of compiler design such as lexing, parsing, abstract-syntax-tree (AST) and assembly generation. Further, contexts like register allocation, stack pointer, memory management, etc can also be seen. </p>
-              <p>This project scored a 80% out of all the seen and unseen test cases, putting our compiler second-best ranked among all. The test cases varied from functions and datatypes to pointers and structs. If you have any questions and suggestions, please feel free to reach out to me. I would be more than happy to help and learn more 😀.</p>
-              <a href="https://github.com/johanjino/ExecEngine_C_Compiler#execengine-c-compiler" class="github"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-
+    <section class="case-body">
+      <div class="wrap-narrow">
+        <div class="case-facts reveal">
+          <div class="case-fact"><b>2nd</b><span>in the cohort on hidden tests</span></div>
+          <div class="case-fact"><b>80%</b><span>of seen and unseen tests passed</span></div>
+          <div class="case-fact"><b>2</b><span>engineers, with <a href="https://github.com/alvi-codes" target="_blank" rel="noopener">Sohailul Alvi</a></span></div>
         </div>
 
+        <h2 class="reveal">The problem</h2>
+        <p class="reveal">Imperial's second-year compilers coursework asks for a compiler that turns ANSI C (C90) into working RISC-V assembly. It's graded against a hidden test suite covering functions, data types, pointers and structs.</p>
+
+        <h2 class="reveal">What we built</h2>
+        <ul class="reveal">
+          <li>A lexer and parser that produce an abstract syntax tree for C90.</li>
+          <li>Code generation from the AST straight to RISC-V assembly.</li>
+          <li>Register allocation, stack-frame management and memory layout for locals, arrays, pointers and structs.</li>
+        </ul>
+
+        <h2 class="reveal">Result</h2>
+        <p class="reveal">Our compiler passed 80% of all seen and unseen tests, ranking second in the cohort. According to the course TA, we were the only team to pass every seen test case.</p>
+        <p class="reveal">The repository also works as a practical introduction to compiler design if you're learning the topic. Questions and suggestions are welcome.</p>
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
+  </main>
 
-  </main><!-- End #main -->
+  <footer class="footer">
+    <div class="wrap">
+      <p>Copyright © 2026 Johan Jino.</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="https://github.com/johanjino" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/site.js"></script>
 </body>
 
 </html>

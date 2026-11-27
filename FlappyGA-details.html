@@ -1,110 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon/favicon-16x16.png" rel="icon">
-  <link href="assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: MyResume
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FlappyGA — an FPGA-controlled multiplayer game · Johan Jino</title>
+  <meta name="description" content="FlappyGA is a Flappy Bird-style game controlled by tilting an FPGA, with up to eight players, on-device FIR filtering and a cloud leaderboard.">
+  <meta property="og:title" content="FlappyGA — an FPGA-controlled multiplayer game">
+  <meta property="og:description" content="Tilt an FPGA to fly. Eight players at once, with a cloud leaderboard.">
+  <meta property="og:image" content="https://johanjino.github.io/assets/img/projects/FlappyGA/FlappyGA.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <meta name="theme-color" content="#05070a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
 
 <body>
 
-  <main id="main">
+  <header class="nav">
+    <div class="wrap">
+      <a href="index.html" class="nav-brand">Johan Jino</a>
+      <ul class="nav-links nav-links-static">
+        <li><a href="index.html#work">All work</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Get in touch</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="eyebrow reveal">FPGA · Networking</p>
+        <h1 class="headline cursor reveal" data-delay="60">FlappyGA</h1>
+        <p class="lede reveal" data-delay="120">Tilt an FPGA to fly. Up to eight players at once.</p>
+        <div class="actions reveal" data-delay="180">
+          <a class="btn" href="https://github.com/johanjino/FlappyGA" target="_blank" rel="noopener">View on GitHub</a>
+          <a class="more" href="index.html#work">More projects</a>
+        </div>
+      </div>
+    </section>
 
-      <div class="container">
+    <div class="case-media">
+      <video class="reveal" controls preload="metadata" playsinline poster="assets/img/projects/FlappyGA/FlappyGA.jpg">
+        <source src="assets/img/projects/FlappyGA/FlappyGA_Video.mp4" type="video/mp4">
+      </video>
+    </div>
 
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <h2>FlappyGA</h2>
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                
-                <div class="swiper-slide">
-                  <video width="640" height="480" controls>
-                    <source src="assets/img/projects/FlappyGA/FlappyGA_Video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-description">
-              <h2>Project Information</h2>
-              <p>FlappyGA, a game we created as part of our EIE2 Information Processing Project at Imperial College London based off of Flappy Bird.  </p>
-              <p>The game involves players tilting their FPGA up and down to move the character; it supports up to 8 players playing at once.  </p>
-              <h4 id="requirements">Requirements</h4>
-              <p>The functional requirements of the system included:</p>
-              <ul>
-              <li>FPGA performs fixed-point FIR filtering on data from accelerometer sensor to smoothen it and remove noise.</li>
-              <li>FPGA accelerometer data is processed on a local computer, which determines the board tilt direction. This is then sent via a websocket to Unity.</li>
-              <li>Photon Server is used to control the game state to allow for multiplayer. We use the DynamoDB SDK to update and get leaderboard data. </li>
-              <li>The FPGA is updated with the number of jumps to inform the user how long he or she has lasted in the game.</li>
-              </ul>
-              <a href="https://github.com/johanjino/FlappyGA" class="github"><i class="bx bxl-github"></i></a>
-            </div>
-          </div>
-
+    <section class="case-body">
+      <div class="wrap-narrow">
+        <div class="case-facts reveal">
+          <div class="case-fact"><b>8</b><span>players at the same time</span></div>
+          <div class="case-fact"><b>On-FPGA</b><span>fixed-point FIR filtering</span></div>
+          <div class="case-fact"><b>Cloud</b><span>leaderboard on DynamoDB</span></div>
         </div>
 
+        <h2 class="reveal">The idea</h2>
+        <p class="reveal">For Imperial's second-year Information Processing project, we built a take on Flappy Bird where you control the bird by physically tilting an FPGA board up and down.</p>
+
+        <h2 class="reveal">How it works</h2>
+        <ul class="reveal">
+          <li>The FPGA runs fixed-point FIR filtering on its accelerometer data to smooth it and remove noise.</li>
+          <li>A local computer reads the filtered data, decides which way the board is tilted, and sends that to Unity over a WebSocket.</li>
+          <li>A Photon server keeps the game state in sync for multiplayer, and the DynamoDB SDK reads and writes the leaderboard.</li>
+          <li>The game sends your jump count back to the FPGA, so the board itself shows how long you've lasted.</li>
+        </ul>
       </div>
-    </section><!-- End Portfolio Details Section -->
+    </section>
+  </main>
 
-  </main><!-- End #main -->
+  <footer class="footer">
+    <div class="wrap">
+      <p>Copyright © 2026 Johan Jino.</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="https://github.com/johanjino" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/site.js"></script>
 </body>
 
 </html>

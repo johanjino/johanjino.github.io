@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PG-MDP — profile-guided memory dependence prediction · Johan Jino</title>
+  <meta name="description" content="PG-MDP is a hardware-software co-design for memory dependence prediction on area-constrained cores, accepted at HPCA 2027. Johan Jino is second author.">
+  <meta property="og:title" content="PG-MDP — profile-guided memory dependence prediction">
+  <meta property="og:description" content="80% fewer predictor queries, 84% fewer false dependencies and +4.6% IPC on a small core, without a bigger predictor. HPCA 2027.">
+  <meta property="og:image" content="https://johanjino.github.io/assets/img/johan-og.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <meta name="theme-color" content="#05070a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <a href="index.html" class="nav-brand">Johan Jino</a>
+      <ul class="nav-links nav-links-static">
+        <li><a href="index.html#work">All work</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Get in touch</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <div class="wrap">
+        <p class="eyebrow reveal">Research · HPCA 2027</p>
+        <h1 class="headline cursor reveal" data-delay="60">PG-MDP</h1>
+        <p class="lede reveal" data-delay="120">Profile-guided memory dependence prediction for area-constrained cores.</p>
+        <div class="actions reveal" data-delay="180">
+          <a class="btn" href="https://arxiv.org/abs/2604.08445" target="_blank" rel="noopener">Read the paper</a>
+          <a class="more" href="https://github.com/johanjino/PND-loads" target="_blank" rel="noopener">Thesis code</a>
+          <a class="more" href="assets/docs/Johan_Jino_REACH_2025_Poster.pdf" target="_blank" rel="noopener">REACH 2025 poster</a>
+          <a class="more" href="index.html#work">More projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-body">
+      <div class="wrap-narrow">
+        <div class="case-facts reveal">
+          <div class="case-fact"><b>&minus;84%</b><span>false dependencies</span></div>
+          <div class="case-fact"><b>&minus;80%</b><span>predictor queries</span></div>
+          <div class="case-fact"><b>+4.6%</b><span>geomean IPC on a small core</span></div>
+        </div>
+
+        <h2 class="reveal">The problem</h2>
+        <p class="reveal">Out-of-order CPUs guess which earlier stores a load depends on, so independent loads can run early. Small, energy-efficient cores have little room for that predictor's tables, so many loads that never conflict are still held back behind stores. These false dependencies cost performance.</p>
+        <p class="reveal">The usual fix is a bigger or more complex predictor. That costs area these cores don't have.</p>
+
+        <h2 class="reveal">The idea</h2>
+        <ul class="reveal">
+          <li>Use the compiler and profiling to find loads that are consistently independent of earlier stores.</li>
+          <li>Label those loads in the instruction encoding. They skip the predictor and issue as soon as possible.</li>
+          <li>If a labelled load does conflict, the core rolls back as usual but doesn't create a predictor entry. The predictor keeps its space for the loads that need it.</li>
+        </ul>
+
+        <h2 class="reveal">My part</h2>
+        <p class="reveal">The paper grew out of my MEng thesis at Imperial, <em>Compiler Analysis and Profiling Assisted Memory Dependency Prediction</em>. I built LLVM passes that combine SVF static analysis with a store-distance profile to label loads, and evaluated them in gem5 on SPEC CPU2017. The thesis showed a 5.03% geomean IPC gain on a small core.</p>
+        <p class="reveal">I'm second author on the paper, with Luke Panayi, Sebastian S. Kim, Alberto Ros, Alexandra Jimborean, Jim Whittaker, Martin Berger and Paul H J Kelly.</p>
+
+        <h2 class="reveal">Result</h2>
+        <p class="reveal">Across SPECspeed 2017, PG-MDP cuts predictor queries by 80% and false dependencies by 84%. Geomean IPC on a small core (ROB of 128) rises by 4.6%, to within 1.2% of a predictor with 8x the entries, without scaling any hardware structures.</p>
+
+        <h2 class="reveal">Poster · REACH 2025</h2>
+        <p class="reveal">Before the paper, I presented the thesis results as first author in an accepted poster at REACH 2025, <em>Profiling Assisted Memory Dependency Prediction Using Aliasing and Distance Information</em>, with Luke Panayi and Paul Kelly. Its key finding: store distance, the number of stores between a dependent load and store, is the most effective signal for labelling loads.</p>
+        <a class="case-poster reveal" href="assets/docs/Johan_Jino_REACH_2025_Poster.pdf" target="_blank" rel="noopener">
+          <img src="assets/img/projects/PG-MDP/REACH_2025_Poster.jpg" alt="REACH 2025 poster: Profiling Assisted Memory Dependency Prediction Using Aliasing and Distance Information" loading="lazy" width="1273" height="1800">
+        </a>
+        <p class="reveal"><a class="more" href="assets/docs/Johan_Jino_REACH_2025_Poster.pdf" target="_blank" rel="noopener">Open the poster (PDF)</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Copyright © 2026 Johan Jino.</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="https://github.com/johanjino" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+
+</html>
