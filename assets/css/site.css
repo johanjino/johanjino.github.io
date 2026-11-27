@@ -535,6 +535,7 @@ p {
   border: 1px solid var(--line-strong);
   border-bottom: 0;
   overflow: hidden;
+  will-change: transform, opacity;
 }
 
 .hero-media img {
@@ -551,7 +552,7 @@ p {
   inset: 0;
   pointer-events: none;
   background:
-    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.16) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.06) 0 1px, transparent 1px 3px),
     linear-gradient(180deg, transparent 72%, rgba(5, 7, 10, 0.7) 100%);
 }
 
@@ -618,18 +619,17 @@ p {
 .hud-scan {
   position: absolute;
   z-index: 1;
-  left: 0;
-  right: 0;
-  height: 120px;
-  top: -120px;
+  inset: 0;
   pointer-events: none;
-  background: linear-gradient(180deg, transparent, rgba(62, 230, 255, 0.08), transparent);
+  background: linear-gradient(180deg, transparent, rgba(62, 230, 255, 0.08), transparent) bottom / 100% 120px no-repeat;
+  transform: translateY(-100%);
   animation: scan 7s linear infinite;
+  will-change: transform;
 }
 
 @keyframes scan {
   to {
-    top: 100%;
+    transform: translateY(120px);
   }
 }
 
